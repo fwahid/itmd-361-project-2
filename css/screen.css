@@ -1,0 +1,45 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* stylelint-disable*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+/* scale set at 1.33 */
+
+/* ===== BASE STYLES ===== */
+html{
+	font-size: 1.0em; /* 16px */ /*possibly change to 16 */
+	line-height: 1.2em; /* 19.2px = 1 gridline 120% */
+	padding: 1.2em 0.90em; /* 4:3 ratio @ 22px */ /*bullet points were added when i put padding */
+}
+
+h1{
+	font-size: 2.647em; /* 42.347px @ 16px */
+	line-height: 2.647em; ; /* 50.815 = 1 gridline 100% */ /*i dont like this */
+}
+
+h2 {
+	font-size: 1.50em; /* 24px @ 18px */ 
+	line-height: 1.8em; /* 28.8px = 1 gridline 120% */
+	text-decoration: underline;
+}
+
+ul {
+	 padding-bottom: 0.611em; /* 11px = half gridline*/
+	 padding-top: 0.611em; /* 11px = half gridline*/ /* probably indent rather than padding */
+}
+
+li {
+  padding-bottom: 0.306em; /* 5.5px = 1/4 gridline */
+}
+
+/* li:last-child {
+  padding-bottom: 0; */
+
+/* ===== LAYOUT STYLES ===== */
+
+/* ===== MODULAR STYLES ===== */
+
+/* ===== STATE STYLES ===== */
