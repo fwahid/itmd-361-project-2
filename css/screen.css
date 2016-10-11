@@ -2,13 +2,13 @@
 *{margin: 0;padding: 0;}
 /* END RESET */
 body {
-  background-color: rgb(241, 240, 238);
+  background-color: #ccff99;
   overflow-x: hidden;
 }
 
 header {
   text-align: center;
-  background-color: #160A47;
+  background-color: #0074D9;
   margin-bottom: 1.5em;
 }
 
@@ -24,7 +24,7 @@ nav li {
 }
 
 nav a {
-  color: white;
+  color: #558000;
   text-decoration: none;
   padding: 2em 5em 2em 5em;
   display: block;
@@ -57,6 +57,10 @@ figure {
   text-align: right;
 }
 
+iframe {
+  display: inline-block;
+  text-align: right;
+}
 .lexus * {
     margin-top: 0.25em;
     margin-bottom: 0.25em;
@@ -82,18 +86,6 @@ figure {
   padding-bottom: 0.25em;
 }
 
-#fav {
-  display: inline-block;
-  width: 55em;
-  padding-right: 1em;
-}
-
-#ant {
-  display: inline-block;
-  width: 55em;
-  padding-left: 1em;
-}
-
 #res-left {
   display: inline-block;
   vertical-align: top;
@@ -110,7 +102,7 @@ figure {
 
 /* Interactions */
 nav a:hover {
-  background-color: rgb(241, 240, 238);
+  background-color: /*rgb(241, 240, 238);*/ #669900;
   color: #160A47;
 }
 
@@ -118,7 +110,7 @@ a:hover, a:visited, a:link, a:active {
   text-decoration: none;
 }
 
-/* Tablet/Notebook(small) */
+/* Tablet */
 @media screen and (min-width: 30em) and (max-width: 60em)
 {
   body {
@@ -162,15 +154,6 @@ a:hover, a:visited, a:link, a:active {
     height: auto;
   }
 
-  #edu {
-    border-top: thin solid black;
-    border-bottom: thin solid black;
-  }
-
-  #personal {
-    text-align: center;
-  }
-
   .lexus * {
     margin-top: 0.25em;
     margin-bottom: 0.25em;
@@ -178,18 +161,6 @@ a:hover, a:visited, a:link, a:active {
 
   .lexus h2 {
     border-top: thin solid black;
-  }
-
-  #fav {
-    display: block;
-    width: auto;
-    padding-right: 0;
-  }
-
-  #ant {
-    display: block;
-    width: auto;
-    padding-left: 0;
   }
 
   #resume {
@@ -281,23 +252,6 @@ a:hover, a:visited, a:link, a:active {
 
   .lexus h2 {
     border-top: thin solid black;
-  }
-
-  .games h3 {
-    text-align: center;
-    display: block;
-  }
-
-  #fav {
-    display: block;
-    width: auto;
-    padding-right: 0;
-  }
-
-  #ant {
-    display: block;
-    width: auto;
-    padding-left: 0;
   }
 
   #resume {
