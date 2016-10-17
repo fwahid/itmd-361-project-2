@@ -1,280 +1,158 @@
-/* STYLE RESET */
-*{margin: 0;padding: 0;}
-/* END RESET */
-body {
-  background-color: #ccff99;
-  overflow-x: hidden;
+/* RESET ========================= */
+/* stylelint-disable */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+/* BASE ========================== */
+html {
+  font-size: 1em; /*16*/
+  line-height: 1.2em; /*19.2*/
 }
 
-header {
+body {
+  padding: 1em; /*32*/
+}
+
+h1 {
+  font-size: 1.7em;
+  line-height: 1.2em;
   text-align: center;
-  background-color: #0074D9;
-  margin-bottom: 1.5em;
 }
 
 nav li {
   list-style-type: none;
   text-decoration: none;
   display: inline-block;
-  border-left: thin solid black;
-  border-right: thin solid black;
-  margin-left: 2em;
-  margin-right: 2em;
+
+  margin-left: 0.6em;
+  margin-right: 1.4em;
 
 }
 
 nav a {
   color: #558000;
   text-decoration: none;
-  padding: 2em 5em 2em 5em;
-  display: block;
+  padding: .4em 1em .4em 1em;
+  display: square;
 }
 
-main {
-  margin: auto 1.5em auto 1.5em;
-  text-align: left;
+p {
+  text-indent: 1em;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  padding: 0.62em;
 }
 
-main li {
-  list-style-type: circle;
+.work-experience {
+    list-style-type: square;
+    padding: 0.62em;
 }
 
-section {
-  border-bottom: thin solid black;
+.job-title {
+    list-style-type: circle;
+    list-style-position: inside;
+    padding-right: 0.183em;
 }
 
-section ul {
-  border-top: thin solid black;
+.contact-info {
+  display: inline-block;
+  margin-left: 0.6em;
+  margin-right: 1.4em;
+  color: #558000;
+  padding: .4em 1em .4em 1em;
+  display: square;
 }
 
-img {
+.p-name {
+  padding-top: 0.33em;
+  padding-bottom: 0.33em;
+}
+li {
+  padding: 0.44em;
+}
+
+.skills {
+    list-style-type: square;
+    padding: 0.62em;
+}
+img, video {
   width: 100%;
-  height: auto;
+  padding: 0.62em; /*10*/
 }
 
-figure {
-  display: inline-block;
-  text-align: right;
+/* LAYOUT ======================== */
+/* MODULAR ======================= */
+.media-left {
+  padding: 0% 1% 0% 1%;
+}
+.media-right {
+  padding: 0% 1% 0% 1%;
 }
 
-iframe {
-  display: inline-block;
-  text-align: right;
-}
-.lexus * {
-    margin-top: 0.25em;
-    margin-bottom: 0.25em;
+/* STATE ========================= */
+/* Mobile */
+@media screen and (min-width: 0.01em) {
+  html {
+    margin: 0% 5% 0% 5%;
   }
-
-.lexus h2 {
-  border-top: thin solid black;
+  .media-left {
+    float: none;
+  }
+  .media-right {
+    float: none;
+  }
+}
+/* Tablet */
+@media screen and (min-width: 29em) {
+  html {
+    font-size: 0.9em;
+    margin: 0% 10% 0% 10%;
+  }
+  .media-left {
+    float: left;
+    max-width: 35%;
+    padding-right: 5%;
+  }
+  .media-right {
+    float: right;
+    max-width: 35%;
+    padding-right: 5%;
+  }
+  h1 {
+    font-size: 2.488em;    /*39.8*/
+    line-height: 1.2em;    /*47.9*/
+  }
+  h2 {
+    font-size: 1.728em;    /*27.65*/
+    line-height: 1.2em;    /*39.9*/
+  }
 }
 
-.lexus h3 {
-  text-align: center;
-  display: block;
+/* Desktop */
+@media screen and (min-width: 50em) {
+  html {
+    margin: 0% 15% 0% 15%;
+  }
 }
 
-#resume {
-  margin: auto 5em auto 5em;
-  padding: 3em;
-  border: thin solid black;
+/* THEME ========================= */
+
+html {
+  background-color: #607B8B;
+  font-family: Merriweather, Georgia, serif;
+}
+body {
+  background-color: #D3D3D3;
 }
 
-#resume * {
-  padding-top: 0.25em;
-  padding-bottom: 0.25em;
-}
-
-#res-left {
-  display: inline-block;
-  vertical-align: top;
-  width: 50em;
-  padding-right: 1em;
-  border-bottom: 0;
-}
-
-#res-right {
-  display: inline-block;
-  width: 50em;
-  padding-left: 1em;
-}
-
-/* Interactions */
+/* INTERACTIONS ================= */
 nav a:hover {
   background-color: /*rgb(241, 240, 238);*/ #669900;
   color: #160A47;
+  padding-left: 0.6em;
+  padding-right: 1.4em;
 }
 
 a:hover, a:visited, a:link, a:active {
   text-decoration: none;
-}
-
-/* Tablet */
-@media screen and (min-width: 30em) and (max-width: 60em)
-{
-  body {
-    font-size: 1em;
-    width: 100%;
-  }
-
-  header {
-    text-align: center;
-    margin-bottom: 1em;
-  }
-
-  nav li {
-    margin-left: 1em;
-    margin-right: 1em;
-    border-left: thin solid black;
-    border-right: thin solid black;
-  }
-
-  nav a {
-    padding: 1em 3em 1em 3em;
-    display: block;
-  }
-
-  h1, h2 {
-    text-align: center;
-    font-size: 1em;
-  }
-
-  h3, h4 {
-    text-align: left;
-    font-size: 1em;
-  }
-
-  main {
-    margin: auto 1em auto 1em;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-  }
-
-  .lexus * {
-    margin-top: 0.25em;
-    margin-bottom: 0.25em;
-  }
-
-  .lexus h2 {
-    border-top: thin solid black;
-  }
-
-  #resume {
-  margin: auto 2em 1em 2em;
-  padding: 1em;
-  border: thin solid black;
-  }
-
-  #resume * {
-    padding-top: 0.25em;
-    padding-bottom: 0.25em;
-  }
-  
-  #res-left {
-  display: block;
-  width: auto;
-  padding-left: 1em;
-  border-bottom: 0;
-  }
-
-  #res-right {
-    display: block;
-    width: auto;
-    padding-left: 1em;
-  }
-}
-
-/* Mobile Phone */
-@media screen and (min-width: 10em) and (max-width: 30em)
-{
-  body {
-    font-size: 0.667em;
-    width: 100%;
-  }
-
-  header {
-    text-align: left;
-    margin-bottom: 1em;
-  }
-
-  nav ul {
-    margin-left: 2em;
-  }
-
-  nav li {
-    margin-left: 0.25em;
-    margin-right: 0.25em;
-    border-left: thin solid black;
-    border-right: thin solid black;
-  }
-
-  nav a {
-    padding: 1em 2em 1em 2em;
-    display: block;
-  }
-
-  h1, h2 {
-    text-align: center;
-    font-size: 1em;
-  }
-
-  h3, h4 {
-    text-align: center;
-    display: inline;
-    font-size: 1em;
-  }
-
-  main {
-    margin: auto 1em auto 1em;
-  }
-
-  section {
-    border-bottom: thin solid black;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-  }
-
-  .resume {
-    text-align: center;
-  }
-
-  .lexus * {
-    margin-top: 0.25em;
-    margin-bottom: 0.25em;
-  }
-
-  .lexus h2 {
-    border-top: thin solid black;
-  }
-
-  #resume {
-  margin: auto 1em 1em 1em;
-  padding: 1em 1em 1em 1.5em;
-  border: thin solid black;
-  }
-
-  #resume * {
-    padding-top: 0.25em;
-    padding-bottom: 0.25em;
-  }
-  
-  #res-left {
-  display: block;
-  width: auto;
-  padding-left: 0;
-  border-bottom: 0;
-  }
-
-  #res-right {
-    display: block;
-    width: auto;
-    padding-left: 0;
-  }
 }
