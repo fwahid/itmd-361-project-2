@@ -20,20 +20,17 @@ h1 {
 }
 
 nav li {
-  list-style-type: none;
-  text-decoration: none;
   display: inline-block;
-
-  margin-left: 0.6em;
-  margin-right: 1.4em;
-
+  width:25%;
 }
 
-nav a {
-  color: #558000;
+nav li a {
+  list-style-type: none;
   text-decoration: none;
-  padding: .4em 1em .4em 1em;
-  display: square;
+  color: #778899;
+  text-decoration: none;
+  padding-top: 0.722em;
+  padding-bottom: 0.722em;
 }
 
 p {
@@ -75,9 +72,16 @@ li {
     list-style-type: square;
     padding: 0.62em;
 }
+
+#youtube-vid2{
+ max-width: auto;
+ max-height: auto;
+ max-width: auto;
+ text-align: center;
+}
 img, video {
   width: 100%;
-  padding: 0.62em; /*10*/
+  padding-right: 0.62em; /*10*/
 }
 
 /* LAYOUT ======================== */
@@ -147,10 +151,9 @@ body {
 
 /* INTERACTIONS ================= */
 nav a:hover {
-  background-color: /*rgb(241, 240, 238);*/ #669900;
-  color: #160A47;
+  background-color: #FAEBD7;
   padding-left: 0.6em;
-  padding-right: 1.4em;
+  padding-right: 0.5em;
 }
 
 a:hover, a:visited, a:link, a:active {
