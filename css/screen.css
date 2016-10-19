@@ -1,161 +1,244 @@
-/* RESET ========================= */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 /* stylelint-disable */
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* Keep reset CSS to one minified line */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
 
-/* BASE ========================== */
+/* ===== BASE STYLES ===== */
+
+/*
+  Setting type to a major third modular scale
+  http://www.modularscale.com/?1&em&1.25&web&text
+*/
+
 html {
-  font-size: 1em; /*16*/
-  line-height: 1.2em; /*19.2*/
+  color: white;
+  background-color: #223843;
+  font-family: helvetica;
+  font-size: 1.125em; /* 18px */
+  line-height: 1.25em; /* 22.5px @ 18px em = 1 gridline */
 }
 
-body {
-  padding: 1em; /*32*/
+#page {
+  padding: 1.25em 1.25em; /* 22.5px @ 18px em */
+}
+nav {
+  display: block;
 }
 
 h1 {
-  font-size: 1.7em;
-  line-height: 1.2em;
-  text-align: center;
+  font-size: 2.441em; /* 43.945px @ 18px em */
+  line-height: 1.536em; /* 67.5px @ 43.945px em */
+  padding-bottom: 0.512em; /* 22.5px @ 43.945px em */
 }
 
-nav li {
-  display: inline-block;
-  width:25%;
+h2 {
+  font-size: 1.953em; /* 35.156px @ 18px em */
+  line-height: 1.22em; /* 45px @ 35.156px em */
+  padding-bottom: 0.64em; /* 22.5px @ 35.159px em */
 }
 
-nav li a {
-  list-style-type: none;
+h3 {
+  font-size: 1.563em; /* 28.125px @ 18px em */
+  line-height: 1.6em; /* 45px @ 28.125px em */
+  padding-bottom: 0.8em; /* 22.5px @ 28.125px em */
+}
+
+a {
   text-decoration: none;
-  color: #778899;
-  text-decoration: none;
-  padding-top: 0.722em;
-  padding-bottom: 0.722em;
 }
 
-p {
-  text-indent: 1em;
-  font-size: 1.2em;
-  line-height: 1.2em;
-  padding: 0.62em;
+p,
+ul {
+  padding-bottom: 1.25em; /* 22.5px : html line-height */
 }
 
-.work-experience {
-    list-style-type: square;
-    padding: 0.62em;
-}
-
-.job-title {
-    list-style-type: circle;
-    list-style-position: inside;
-    padding-right: 0.183em;
-}
-
-.contact-info {
-  display: inline-block;
-  margin-left: 0.6em;
-  margin-right: 1.4em;
-  color: #558000;
-  padding: .4em 1em .4em 1em;
-  display: square;
-}
-
-.p-name {
-  padding-top: 0.33em;
-  padding-bottom: 0.33em;
-}
 li {
-  padding: 0.44em;
+  padding-bottom: 0.625em; /* 11.25px @ 18px em */
 }
 
-.skills {
-    list-style-type: square;
-    padding: 0.62em;
+img,
+video,
+.gif {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  padding-bottom: 1.25em;
+  margin: 0 auto;
 }
 
-#youtube-vid2{
- max-width: auto;
- max-height: auto;
- max-width: auto;
- text-align: center;
-}
-img, video {
-  width: 100%;
-  padding-right: 0.62em; /*10*/
+#youtubevid1 {
+	display: block;
+	text-align: center;
+	max-width: 100%;
+	height: auto;
 }
 
-/* LAYOUT ======================== */
-/* MODULAR ======================= */
-.media-left {
-  padding: 0% 1% 0% 1%;
-}
-.media-right {
-  padding: 0% 1% 0% 1%;
+#youtubevid {
+	text-align: center;
+	width: 75%;
+	max-width: auto;
+	max-height: auto;
 }
 
-/* STATE ========================= */
-/* Mobile */
-@media screen and (min-width: 0.01em) {
-  html {
-    margin: 0% 5% 0% 5%;
-  }
-  .media-left {
-    float: none;
-  }
-  .media-right {
-    float: none;
-  }
-}
-/* Tablet */
-@media screen and (min-width: 29em) {
-  html {
-    font-size: 0.9em;
-    margin: 0% 10% 0% 10%;
-  }
-  .media-left {
-    float: left;
-    max-width: 35%;
-    padding-right: 5%;
-  }
-  .media-right {
-    float: right;
-    max-width: 35%;
-    padding-right: 5%;
-  }
-  h1 {
-    font-size: 2.488em;    /*39.8*/
-    line-height: 1.2em;    /*47.9*/
-  }
-  h2 {
-    font-size: 1.728em;    /*27.65*/
-    line-height: 1.2em;    /*39.9*/
-  }
-}
-
-/* Desktop */
-@media screen and (min-width: 50em) {
-  html {
-    margin: 0% 15% 0% 15%;
-  }
-}
-
-/* THEME ========================= */
-
+/* ===== LAYOUT STYLES ===== */
 html {
-  background-color: #607B8B;
-  font-family: Merriweather, Georgia, serif;
-}
-body {
-  background-color: #D3D3D3;
+  border-top: 2.6875em solid #142736; /* ~ 43px @ 16px/em | 43 = 12 + 19 + 12 from nav */
 }
 
-/* INTERACTIONS ================= */
-nav a:hover {
-  background-color: #FAEBD7;
-  padding-left: 0.6em;
-  padding-right: 0.5em;
+nav {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0.8em 0.4em rgba(0,0,0,0.26); /*The shadow of the navigation bar 14.4px down, 7.2px blur radius*/
+  box-sizing: border-box;
 }
 
-a:hover, a:visited, a:link, a:active {
-  text-decoration: none;
+/* ===== MODULAR STYLES ===== */
+
+ul li ul li { /* list inside a list */
+  list-style: square inside;
+}
+
+ul li ul li ul li { /* list inside a list inside a list */
+  list-style: disc inside;
+  padding-left: 1.25em; /* 22.5px @ 18px em */
+}
+
+ul li ul li ul li ul li { /* list inside a list inside a list inside a list */
+  list-style: circle inside;
+  padding-left: 1.25em; /* 22.5px @ 18px em */
+}
+
+li:last-child {
+  padding-bottom: 0;
+}
+
+.nav li {
+  display: block;
+  float: left;
+  width: 25%;
+  list-style-type: none;
+  padding-bottom: 0;
+}
+
+ul li ul li:first-child {
+  padding-top: 0.625em; /* 11.25px @ 18px em */
+}
+
+/* Navigation */
+nav {
+  font-weight: 200;
+}
+
+.nav {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  padding-bottom: 0;
+}
+
+.nav a {
+  display: block;
+  text-align: center;
+  line-height: 1;
+  padding: 0.556em 0.278em; /* ~ 10px 5px @ 18px/em */
+  background-color: #382243 ;
+  color: white;
+  border-bottom: 0;
+}
+
+/* ===== STATE STYLES ===== */
+
+a:hover {
+  background-color: gray;
+}
+
+#active a {
+  font-weight: 500;
+  color: black;
+  background-color: teal;
+}
+
+#contact-info a {
+  color: blue;
+}
+
+/*ICONS*/
+a.icon {
+	margin: 12px;
+    background-color: #purple;
+    border: 2px solid #fc6;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+a.icon:after,
+a.icon:before {
+    background: #fed;
+    border: 2px solid #fc6;
+    content: '';
+    position: absolute;
+}
+a.icon:hover,
+a.icon:hover:after,
+a.icon:hover:before {
+    background-color: #ffe;
+}
+
+/* Mail Icon */
+a.mail {
+    height: 20px;
+    top: 4px;
+    width: 28px;
+}
+a.mail:after,
+a.mail:before {
+    border-top: none;
+    top: 6px;
+    width: 13px;
+}
+a.mail:after {
+    left: -2px;
+    -webkit-transform: rotate(25deg);
+       -moz-transform: rotate(25deg);
+        -ms-transform: rotate(25deg);
+         -o-transform: rotate(25deg);
+            transform: rotate(25deg);
+}
+a.mail:before {
+    right: -2px;
+    -webkit-transform: rotate(-25deg);
+       -moz-transform: rotate(-25deg);
+        -ms-transform: rotate(-25deg);
+         -o-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+}
+
+/* User Icon */
+
+a.user {
+    border-radius: 10px 10px 0 0;
+    height: 6px;
+    top: 19px;
+    width: 26px;
+}
+a.user:after {
+    border-radius: 10px;
+    height: 17px;
+    left: 4px;
+    top: -20px;
+    width: 14px;
+}
+a.user:before {
+    border: none;
+    height: 10px;
+    left: 9px;
+    top: -9px;
+    width: 8px;
+    z-index: 1;
 }
