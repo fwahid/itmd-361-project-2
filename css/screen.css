@@ -152,23 +152,23 @@ nav {
   border-bottom: 0;
 }
 
+.u-email {
+  color: white;
+}
+.p-tel {
+  color: white;
+}
+.link {
+  color: white;
+}
 /* ===== STATE STYLES ===== */
 
-a:hover {
+.nav :hover {
   background-color: gray;
 }
 
-#active a {
-  font-weight: 500;
-  color: black;
-  background-color: teal;
-}
 
-#contact-info a {
-  color: blue;
-}
-
-/*ICONS*/
+/*
 a.icon {
 	margin: 12px;
     background-color: #purple;
@@ -190,7 +190,6 @@ a.icon:hover:before {
     background-color: #ffe;
 }
 
-/* Mail Icon */
 a.mail {
     height: 20px;
     top: 4px;
@@ -219,8 +218,6 @@ a.mail:before {
             transform: rotate(-25deg);
 }
 
-/* User Icon */
-
 a.user {
     border-radius: 10px 10px 0 0;
     height: 6px;
@@ -242,3 +239,5 @@ a.user:before {
     width: 8px;
     z-index: 1;
 }
+*/
+
