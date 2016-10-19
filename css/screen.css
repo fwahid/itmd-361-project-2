@@ -161,83 +161,12 @@ nav {
 .link {
   color: white;
 }
+
+.git {
+  color: white;
+}
 /* ===== STATE STYLES ===== */
 
 .nav :hover {
   background-color: gray;
 }
-
-
-/*
-a.icon {
-	margin: 12px;
-    background-color: #purple;
-    border: 2px solid #fc6;
-    display: inline-block;
-    position: relative;
-    vertical-align: top;
-}
-a.icon:after,
-a.icon:before {
-    background: #fed;
-    border: 2px solid #fc6;
-    content: '';
-    position: absolute;
-}
-a.icon:hover,
-a.icon:hover:after,
-a.icon:hover:before {
-    background-color: #ffe;
-}
-
-a.mail {
-    height: 20px;
-    top: 4px;
-    width: 28px;
-}
-a.mail:after,
-a.mail:before {
-    border-top: none;
-    top: 6px;
-    width: 13px;
-}
-a.mail:after {
-    left: -2px;
-    -webkit-transform: rotate(25deg);
-       -moz-transform: rotate(25deg);
-        -ms-transform: rotate(25deg);
-         -o-transform: rotate(25deg);
-            transform: rotate(25deg);
-}
-a.mail:before {
-    right: -2px;
-    -webkit-transform: rotate(-25deg);
-       -moz-transform: rotate(-25deg);
-        -ms-transform: rotate(-25deg);
-         -o-transform: rotate(-25deg);
-            transform: rotate(-25deg);
-}
-
-a.user {
-    border-radius: 10px 10px 0 0;
-    height: 6px;
-    top: 19px;
-    width: 26px;
-}
-a.user:after {
-    border-radius: 10px;
-    height: 17px;
-    left: 4px;
-    top: -20px;
-    width: 14px;
-}
-a.user:before {
-    border: none;
-    height: 10px;
-    left: 9px;
-    top: -9px;
-    width: 8px;
-    z-index: 1;
-}
-*/
-
