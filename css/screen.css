@@ -73,6 +73,11 @@ img {
   margin: 0 auto;
 }
 
+figcaption {
+  text-align: center;
+  padding-top: -0.3 rem;
+}
+
 #awards-list {
   list-style: square inside;
   padding-top: 0.625em;
@@ -98,6 +103,14 @@ img {
 
 .links-list {
   list-style: square inside;
+}
+
+footer {
+  margin: 0 -9999rem;
+  margin-bottom: -9999rem;
+  /* add back negative margin value */
+  padding: 0.25rem 9999rem;
+  background-color: #1E323C;
 }
 
 /* ===== LAYOUT STYLES ===== */
@@ -189,12 +202,4 @@ nav {
 
 .nav a:hover {
   background-color: gray;
-}
-
-footer {
-  margin: 0 -9999rem;
-  margin-bottom: -9999rem;
-  /* add back negative margin value */
-  padding: 0.25rem 9999rem;
-  background-color: #1E323C;
 }
