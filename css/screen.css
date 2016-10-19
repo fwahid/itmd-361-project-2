@@ -17,7 +17,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   color: white;
   background-color: #223843;
-  font-family: helvetica;
+  font-family: Depot New W00;
   font-size: 1.125em; /* 18px */
   line-height: 1.25em; /* 22.5px @ 18px em = 1 gridline */
 }
@@ -37,8 +37,12 @@ h1 {
 
 h2 {
   font-size: 1.953em; /* 35.156px @ 18px em */
-  line-height: 1.22em; /* 45px @ 35.156px em */
-  padding-bottom: 0.64em; /* 22.5px @ 35.159px em */
+  line-height: 1.28em; /* 45px @ 35.156px em */
+  padding-bottom: 0.75em; /* 22.5px @ 35.159px em */
+  margin: 0 -9999rem;
+  /* add back negative margin value */
+  padding: 0.25rem 9999rem;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 h3 {
@@ -53,6 +57,7 @@ a {
 
 p,
 ul {
+  padding-top: 0.625em;
   padding-bottom: 1.25em; /* 22.5px : html line-height */
 }
 
@@ -60,9 +65,7 @@ li {
   padding-bottom: 0.625em; /* 11.25px @ 18px em */
 }
 
-img,
-video,
-.gif {
+img {
   display: block;
   max-width: 100%;
   max-height: 100%;
@@ -70,18 +73,31 @@ video,
   margin: 0 auto;
 }
 
-#youtubevid1 {
+#awards-list {
+  list-style: square inside;
+  padding-top: 0.625em;
+}
+
+#youtubevid {
 	display: block;
 	text-align: center;
 	max-width: 100%;
 	height: auto;
 }
 
-#youtubevid {
+#youtubevid1 {
 	text-align: center;
-	width: 75%;
+	width: 60%;
 	max-width: auto;
 	max-height: auto;
+}
+
+#links {
+  color: white;
+}
+
+.links-list {
+  list-style: square inside;
 }
 
 /* ===== LAYOUT STYLES ===== */
@@ -152,12 +168,15 @@ nav {
   border-bottom: 0;
 }
 
+/*ICONS*/
 .u-email {
   color: white;
 }
+
 .p-tel {
-  color: white;
+  color: white;  
 }
+
 .link {
   color: white;
 }
@@ -165,8 +184,17 @@ nav {
 .git {
   color: white;
 }
+
 /* ===== STATE STYLES ===== */
 
-.nav :hover {
+.nav a:hover {
   background-color: gray;
+}
+
+footer {
+  margin: 0 -9999rem;
+  margin-bottom: -9999rem;
+  /* add back negative margin value */
+  padding: 0.25rem 9999rem;
+  background-color: #1E323C;
 }
